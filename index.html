@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var town = {
+  name: '真心鎮',
+  resident: []
+}
+var townData = {};
+var Ming = { name: '小明', age: 16 };
+var Auntie = { name: '漂亮阿姨', age: 21 };
+var people =[
+  {
+    name: '小明',
+    like:'A',
+    age: 18
+  },
+  {
+    name: '漂亮阿姨',
+    like:'B',
+    age: 8
+  },
+  {
+    name: '杰倫',
+    like:'C',
+    age: 12
+  },
+]
+var string ='';
+people.forEach(function(person, i){
+    string=string+`<li>我叫做${person.name}</li>`
+})
+console.log(`<ul>${string}</ul>`)
+</script>    
+</body>
